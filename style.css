@@ -24,10 +24,35 @@ body {
 /* CTA banner container */
 .cta {
 	background-color: #0b7fab;
+	background-image: url('img/cta-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	padding: 80px 20px;
 	text-align: center;
 	min-height: 70vh;
 	box-sizing: border-box;
+	position: relative;
+}
+
+/* Light overlay for background image */
+.cta::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(11, 127, 171, 0.7);
+	z-index: 1;
+}
+
+/* Bring CTA content above overlay */
+.cta h1,
+.cta p,
+.cta-button {
+	position: relative;
+	z-index: 2;
 }
 
 /* CTA heading style */
@@ -62,4 +87,49 @@ body {
 .cta-button:focus {
 	background-color: #22d3ee;
 	color: #05242e;
+}
+
+/* Info section container */
+.info-section {
+	padding: 60px 20px;
+	background-color: #e6f7ff;
+}
+
+/* Centered container for columns */
+.info-container {
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Two evenly sized columns */
+.info-column {
+	display: inline-block;
+	width: 48%;
+	vertical-align: top;
+	margin: 0 1%;
+	box-sizing: border-box;
+}
+
+/* Image styling */
+.info-image {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+
+/* Text column alignment */
+.info-column h2 {
+	color: #0a6f95;
+	font-size: 32px;
+	margin: 0 0 20px 0;
+	text-align: left;
+}
+
+/* Paragraph styling in info section */
+.info-column p {
+	text-align: left;
+	line-height: 1.7;
+	margin: 0 0 16px 0;
+	font-size: 16px;
 }
