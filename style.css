@@ -1,0 +1,65 @@
+/* Page base styles */
+body {
+	margin: 0;
+	font-family: "Segoe UI", Arial, sans-serif;
+	background-color: #e6f7ff;
+	color: #073b4c;
+}
+
+/* Simple site header */
+.site-header {
+	background-color: #0a6f95;
+	padding: 14px 20px;
+	text-align: center;
+}
+
+/* Site name text */
+.site-name {
+	margin: 0;
+	font-size: 20px;
+	color: #e0fbfc;
+	font-weight: 700;
+}
+
+/* CTA banner container */
+.cta {
+	background-color: #0b7fab;
+	padding: 80px 20px;
+	text-align: center;
+	min-height: 70vh;
+	box-sizing: border-box;
+}
+
+/* CTA heading style */
+.cta h1 {
+	font-size: 48px;
+	color: #e0fbfc;
+	margin: 0 0 16px 0;
+}
+
+/* CTA description text */
+.cta p {
+	font-size: 18px;
+	color: #d6f6ff;
+	max-width: 700px;
+	margin: 0 auto 28px auto;
+	line-height: 1.6;
+}
+
+/* CTA button link */
+.cta-button {
+	display: inline-block;
+	background-color: #18c5c5;
+	color: #083344;
+	text-decoration: none;
+	font-weight: 700;
+	padding: 14px 28px;
+	border-radius: 6px;
+}
+
+/* Button hover focus states */
+.cta-button:hover,
+.cta-button:focus {
+	background-color: #22d3ee;
+	color: #05242e;
+}
